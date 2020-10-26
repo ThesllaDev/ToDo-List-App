@@ -1,0 +1,25 @@
+    /* CSS VARIABLES */
+:root{
+    --black: #333;
+    --blue: #2F80ED;
+    --gray: #BDBDBD;
+    --red: #EB5757;
+}
+
+    /* RESETS */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+    /* GENERAL STYLES */
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+h1{
+    font-family: 'Raleway', 'Arial', 'Helvetica', sans-serif;
+}
