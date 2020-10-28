@@ -16,17 +16,12 @@
     /* GENERAL STYLES */
 body{
     color: var(--black);
-
     font-family: 'Montserrat', sans-serif;
-    height: 100vh;
-    
     margin: 0 auto;
     max-width: 1440px;
 }
 
-ul{
-    list-style: none;
-}
+ul{ list-style: none; }
 
 h1{
     font-family: 'Raleway', 'Arial', 'Helvetica', sans-serif;
@@ -34,6 +29,8 @@ h1{
     margin: 30px;
     text-align: center;
 }
+
+button { cursor: pointer; }
 
     /*  TODO LIST APP */
 
@@ -47,7 +44,7 @@ main{
 
 .nav-stats{
     border-bottom: 1px solid var(--gray);
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .stats{
@@ -74,7 +71,7 @@ input[type="text"]{
     width: 65%;
 }
 
-.add-item{
+.button-add{
     background-color: var(--blue);
     border: 1px solid var(--blue);
     border-radius: 12px;
@@ -84,19 +81,60 @@ input[type="text"]{
     padding: 15px 25px;
 }
 
+.button-add:hover{
+    background-color: #fff;
+    color: var(--blue);
+}
+
 .todo-list{
+    font-weight: 500;
     width: 100%;
 }
 
-input[type="checkbox"]{
-    margin: 10px 25px;
+.todo-list li{
+    border-bottom: 1px solid var(--gray);
 }
 
-.delete-all{
+.todo-list li:nth-of-type(even){
+    background-color: #ececec;
+}
+
+input[type="checkbox"]{
+    margin: 10px 5px 10px 25px;
+}
+
+.todo-list button{
+    float: right;
+    margin-right: 25px;
+    margin-top: 5px;
+    min-width: 50px;
+}
+
+.fa-trash-alt{
+    background-color: transparent;
+    border: none;
+    color: var(--gray);
+    font-size: 20px;
+}
+
+.btn-delete-all{
     background-color: var(--red);
     border: 1px solid var(--red);
     border-radius: 4px;
     color: #fff;
     font-weight: 600;
+    margin: 15px;
     padding: 15px 25px;
+}
+
+.btn-delete-all:hover{
+    background-color: #fff;
+    color: var(--red);
+}
+
+/* INTERACTIONCS */
+
+.complete{
+    color: #818181;
+    text-decoration: line-through;
 }
