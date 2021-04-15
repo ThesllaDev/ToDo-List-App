@@ -1,13 +1,100 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  list-style: none;
   margin: 0px;
   padding: 0px;
 }
 
-body {
+.main-content {
+  color: #333;
   font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 609px;
+}
+
+.main-content .main-title {
+  font-family: 'Raleway';
+  margin: 2em 0 3.6em;
+  text-align: center;
+}
+
+.main-content .navigations-tabs {
+  border-bottom: 1px solid #BDBDBD;
+}
+
+.main-content .navigations-tabs .list-navigations-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-content .navigations-tabs .list-navigations-tabs .item-navigations-tabs {
+  padding: 0.9em 1.9em;
+  cursor: pointer;
+}
+
+.main-content .navigations-tabs .list-navigations-tabs .item-navigations-tabs a {
+  text-decoration: none;
+}
+
+.main-content .navigations-tabs .list-navigations-tabs .active {
+  border-bottom: 4px solid #0267eb;
+  border-radius: 4px;
+}
+
+.main-content .add-new-tasks {
+  padding: 1.1em 0 2.0em;
+}
+
+.main-content .add-new-tasks .label-new-task {
+  display: block;
+  text-indent: 0.7em;
+}
+
+.main-content .add-new-tasks .input-new-task {
+  border: 1px solid #BDBDBD;
+  border-radius: 12px;
+  font-weight: 600;
+  height: 56px;
+  margin-right: 6%;
+  text-indent: 0.7em;
+  width: 60%;
+}
+
+.main-content .add-new-tasks .btn-add {
+  background-color: #0267eb;
+  border: 1px solid #0267eb;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 10px 0px #01316e;
+          box-shadow: 0px 10px 0px #01316e;
+  color: #f2f2f2;
+  cursor: pointer;
+  font-weight: 600;
+  height: 56px;
+  width: 30%;
+}
+
+.main-content .fa-check-square {
+  color: #0267eb;
+}
+
+.main-content .task-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 0;
+}
+
+.main-content .task-list .item-task-list {
+  margin: 13px 0;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
