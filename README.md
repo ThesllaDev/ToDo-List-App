@@ -1,6 +1,7 @@
 <h1 align="center">{ ToDo List App }</h1>
 
 <div align="center">
+  <h3>Status: paused for studies</h3>
    Solution to the ToDo List App challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
 </div>
 
